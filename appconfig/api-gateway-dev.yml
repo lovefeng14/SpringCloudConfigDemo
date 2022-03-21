@@ -1,5 +1,5 @@
 hx:
-  name: gateway
+  name: gateway2
 spring: 
   cloud: 
     gateway: 
