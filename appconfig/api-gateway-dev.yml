@@ -9,3 +9,5 @@ spring:
           predicates:
             - Path=/provider/** # 路由规则
             - Query=name, pu.
+          filters:
+            - StripPrefix=1
