@@ -7,4 +7,5 @@ spring:
         - id: eureka-client-provider #路由的ID
           uri: lb://eureka-client-provider
           predicates:
+            - Path=/provider/** # 路由规则
             - Query=name, pu.
