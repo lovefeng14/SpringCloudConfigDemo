@@ -1,2 +1,10 @@
 hx:
   name: gateway
+spring: 
+  cloud: 
+    gateway: 
+      routes:
+        - id: eureka-client-provider #路由的ID
+          uri: lb://eureka-client-provider
+          predicates:
+            - Query=name, pu.
